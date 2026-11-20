@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Dados locais da profissional (nao versionar ate confirmacao de visibilidade do repo)
+/public/local/
