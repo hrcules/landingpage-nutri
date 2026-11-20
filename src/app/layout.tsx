@@ -6,12 +6,12 @@ const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "[PLACEHOLDER] Nutrição materno-infantil e neurodivergência",
+  title: "[NOME DA NUTRICIONISTA] | Nutrição materno-infantil",
   description:
-    "[PLACEHOLDER] Nutricionista materno-infantil com foco em crianças neurodivergentes. Atendimento acolhedor para a criança e a família.",
+    "Acompanhamento nutricional materno-infantil, com olhar atento para crianças neurodivergentes e suas famílias.",
   openGraph: {
-    title: "[PLACEHOLDER] Nutrição materno-infantil e neurodivergência",
-    description: "[PLACEHOLDER] Descrição para compartilhamento.",
+    title: "[NOME DA NUTRICIONISTA] | Nutrição materno-infantil",
+    description: "Alimentação com cuidado e respeito ao ritmo da sua criança.",
     locale: "pt_BR",
     type: "website",
   },

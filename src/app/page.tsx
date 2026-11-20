@@ -4,6 +4,7 @@ import { Sobre } from "@/components/sections/sobre";
 import { Abordagem } from "@/components/sections/abordagem";
 import { Servicos } from "@/components/sections/servicos";
 import { Contato } from "@/components/sections/contato";
+import { crn } from "@/lib/profissional";
 
 export default function Home() {
   return (
@@ -17,8 +18,8 @@ export default function Home() {
         <Contato />
       </main>
       <footer className="border-t py-8 text-center text-sm text-muted-foreground">
-        © [PLACEHOLDER: ano e nome da profissional]. Conteúdo informativo; não
-        substitui consulta.
+        [NOME DA NUTRICIONISTA] · Nutricionista · {crn ? `CRN ${crn}` : "[CRN]"} · [CIDADE] ·
+        [LINK DO INSTAGRAM]
       </footer>
     </>
   );

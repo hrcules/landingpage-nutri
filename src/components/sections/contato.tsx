@@ -12,8 +12,11 @@ export function Contato() {
   return (
     <section id="contato" className="scroll-mt-16 bg-secondary">
       <div className="mx-auto max-w-2xl px-4 py-16">
-        <h2 className="text-3xl font-bold">Contato</h2>
-        <p className="mt-3 text-muted-foreground">[PLACEHOLDER: texto de convite ao contato]</p>
+        <h2 className="text-3xl font-bold">Vamos conversar?</h2>
+        <p className="mt-3 text-muted-foreground">
+          Conte um pouco sobre a sua criança e as suas dúvidas. A primeira conversa ajuda a
+          entender se o acompanhamento faz sentido para vocês.
+        </p>
         <form action={action} className="mt-8 space-y-4">
           <div className="space-y-2">
             <Label htmlFor="nome">Nome</Label>
@@ -24,11 +27,15 @@ export function Contato() {
             <Input id="email" name="email" type="email" required autoComplete="email" />
           </div>
           <div className="space-y-2">
+            <Label htmlFor="telefone">Telefone/WhatsApp</Label>
+            <Input id="telefone" name="telefone" type="tel" autoComplete="tel" />
+          </div>
+          <div className="space-y-2">
             <Label htmlFor="mensagem">Mensagem</Label>
             <Textarea id="mensagem" name="mensagem" rows={5} required />
           </div>
           <Button type="submit" disabled={pending}>
-            {pending ? "Enviando..." : "Enviar"}
+            {pending ? "Enviando..." : "Enviar mensagem"}
           </Button>
           {state && (
             <p

@@ -10,7 +10,7 @@ export function Header() {
     <header className="sticky top-0 z-10 border-b bg-background/90 backdrop-blur">
       <div className="mx-auto flex max-w-5xl items-center justify-between gap-4 px-4 py-3">
         <a href="#inicio" className="font-semibold text-primary">
-          [PLACEHOLDER: marca]
+          [NOME DA NUTRICIONISTA]
         </a>
         <nav aria-label="Principal" className="flex gap-3 text-sm sm:gap-4">
           {links.map((l) => (
